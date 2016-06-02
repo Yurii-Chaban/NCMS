@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NCMS</title>
+
+	<!-- Include media queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- Include styles -->
+	<link rel="stylesheet" href="stylesheets/font-awesome.css">
+	<link rel="stylesheet" href="stylesheets/main_style.css">
+
+</head>
+<body>
+	<header>
+		<div class="dropdovn-menu">
+            <h1 class="logo">
+				<a href="#"></a>
+            </h1>
+            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+            <label class="btn-menu" for="hmt">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+            <ul class="hidden-menu">
+                <li>
+                	<a href="#">
+                		<span>Add client</span>
+                		<span class="fa fa-plus"></span>
+                	</a>
+                </li>
+                <li>
+                	<a href="#">test</a>
+                </li>
+                <li>
+                	<a href="#">
+						<span class="fa fa-sign-out" aria-hidden="true"></span>
+                		<span>Sign out</span>
+            		</a>
+                </li>
+            </ul>
+        </div>
+		 <div class="filter-block">
+            <a href="#" class="add-client"><span class="fa fa-plus" aria-hidden="true"></span></a>
+            <label for="hider"> <span class="fa fa-filter fa-2x" aria-hidden="true"></span></label>
+            <input type="checkbox" checked="no" id="hider">
+            <div id="sidebar">
+                <form action="#" method="post">
+                	<select name="services" multiple>
+                		<option value="Services"></option>
+                		<option>Services 1</option>
+                		<option>Services 2</option>
+                		<option>Services 3</option>
+                	</select>
+                	<select name="Status" multiple>
+                		<option value="status"></option>
+                		<option>Status 1</option>
+                		<option>Status 2</option>
+                		<option>Status 3</option>
+                	</select>
+                	<input type="submit" value="OK">
+                </form>
+        	</div>
+	</header>
+	<section>
+		<div class="wrapper">
+			<table class="table table-bordered table-hover tablesorter" id="maintable">
+                  <thead>
+                     <tr>
+                        <th>#</th>
+                        <th>Name of Client</th>
+                        <th>Services</th>
+                        <th>Call back</th>
+                        <th>Edit info</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+					<tr>
+						<td>1</td>
+						<td>The Coca-Cola Big Company</td>
+					</tr>
+					<tr>
+						<td>Web</td>
+					</tr>
+					<tr>
+						<td>15 Mart 16   15:34</td>
+						<td>
+							
+						</td>
+					</tr>
+                  </tbody>
+		</div>	
+	</section>
+</body>
+</html>
