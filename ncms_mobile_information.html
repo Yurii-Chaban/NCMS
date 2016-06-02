@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>NCMS</title>
+
+	<!-- Include media queries -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"/>
+
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+
+	<!-- Include styles -->
+	<link rel="stylesheet" href="stylesheets/font-awesome.css">
+	<link rel="stylesheet" href="stylesheets/icon.css">
+	<link rel="stylesheet" href="stylesheets/semantic.css">
+	<link rel="stylesheet" href="stylesheets/dropdown.css">
+	<link rel="stylesheet" href="stylesheets/jquery.fancybox.css">
+	<link rel="stylesheet" href="stylesheets/main_style.css">
+
+</head>
+<body>
+	<header>
+		<div class="dropdovn-menu">
+            <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+			<label class="btn-menu" for="hmt">
+			  <span class="first"></span>
+			  <span class="second"></span>
+			  <span class="third"></span>
+			</label>
+			<ul class="hidden-menu">
+                <li>
+                	<a class="add-client-button" href="#">
+                		<span class="sign-title">Add client</span>
+                		<span class="fa fa-plus"></span>
+                	</a>
+                </li>
+                <li>
+                	<a href="#">test</a>
+                </li>
+                <li>
+                	<a href="#">
+						<span class="sign-out-btn">
+							<img style="vertical-align: middle;" src="images/exit_img.png" alt="exit">
+                			<span>Sign out</span>
+            			</span>
+            		</a>
+                </li>
+            </ul>
+        </div>
+		<div class="info-block">
+			<a href="#">
+				<span class="fa fa-info" aria-hidden="true"></span>
+			</a>
+			<a href="#">
+				<span class="fa fa-comment-o" aria-hidden="true"></sapn>
+			</a>
+		</div>
+	</header>
+	<section class="info-content">
+		<div class="wrapper">
+			<div class="fancybox-block">
+                <div class="upload-img-block">
+                    <a rel="gallery" class="fancybox" href="http://i.piccy.info/i9/0b900a4265eda9c9c03cc78d1e45562c/1464179282/66088/1035850/IMG_8783.jpg">
+                        <img src="http://i.piccy.info/i9/0b900a4265eda9c9c03cc78d1e45562c/1464179282/66088/1035850/IMG_8783.jpg" alt="img">
+                    </a>
+                </div>
+                <a class="upload-img" href="#">Upload</a>
+            </div>
+            <table class="table-info-contant" id="maintable">
+              <thead>
+                 <tr>
+                    <th>Company</th>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>E-mail</th>
+                    <th>Address</th>
+                    <th>Service</th>
+                    <th>Status</th>
+                    <th>Recommended:</th>
+                 </tr>
+              </thead>
+              <tbody>
+				<tr>
+					<td>The Coca-Cola Company</td>
+				</tr>
+				<tr>
+					<td>Coca-Cola</td>
+				</tr>
+				<tr>
+					<td>800 438 2653</td>
+				</tr>
+				<tr>
+					<td>Coca@cola.com</td>
+				</tr>
+				<tr>
+					<td>The Coca-Cola Company P.O.<br>
+					Box 1734 Atlanta, GA 30301,<br>
+					USA</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="ui floating dropdown labeled icon button">
+						  <span class="text">WEB</span>
+						  <i class="chevron down icon"></i>
+						  <div class="menu">
+						    <div class="ui icon search input">
+						      <i class="search icon"></i>
+						      <input type="text" placeholder="Search tags...">
+						    </div>
+						    <div class="divider"></div>
+						    
+						    <div class="scrolling menu">
+						      <div class="item">
+						        WEB
+						      </div>
+						      <div class="item">
+						        SEO
+						      </div>
+						      <div class="item">
+						        SOFT
+						      </div>
+						      <div class="item">
+						        OTHER
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					</td>
+					<td>
+						<div class="select-status">
+							<div class="ui dropdown">
+							  <div class="text"><i class="plus icon"></i></div>
+							  <i class="chevron down icon"></i>
+							  <div class="menu">
+							    <div class="item">
+							    	<i class="plus icon"></i>
+						    	</div>
+							    <div class="item">
+							    	<i class="checkmark icon"></i>
+						    	</div>
+							    <div class="item">
+							      <i class="minus icon"></i>
+							    </div>
+							    <div class="item">
+							      <i class="remove icon"></i>
+							    </div>
+							  </div>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<textarea name="recomended" placeholder="Something..."></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td>Call back date <span class="fa fa-calendar" aria-hidden="true"></span></td>
+				</tr>
+				<tr>
+					<td><span class="date">15 Mart 16   15:34</span></td>
+				</tr>
+              </tbody>
+          </table>
+		</div>	
+	</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.fancybox.pack.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	<script src="js/semantic.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script type="text/javascript">
+	    $(".fancybox")
+	    .attr('rel', 'gallery')
+	    .fancybox({
+	        openEffect  : 'none',
+	        closeEffect : 'none',
+	        nextEffect  : 'none',
+	        prevEffect  : 'none',
+	        padding     : 0,
+	        margin      : [20, 60, 20, 60] // Increase left/right margin
+	    });
+	</script>
+	<script>
+		$(document).ready(function($) {
+			$('.ui.dropdown')
+			  .dropdown()
+			;
+		});		
+	</script>
+</body>
+</html>
