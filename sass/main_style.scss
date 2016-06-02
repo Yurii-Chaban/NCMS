@@ -4,3 +4,254 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('http://globalvision.name/resorses/HelveticaNeueCyr/helveticaneuecyr-bold-webfont.woff2') format('woff2'),
+         url('http://globalvision.name/resorses/HelveticaNeueCyr/helveticaneuecyr-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('http://globalvision.name/resorses/HelveticaNeueCyr/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
+         url('http://globalvision.name/resorses/HelveticaNeueCyr/helveticaneuecyr-roman-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {font-family: "HelveticaNeueLT";
+  src: url("http://globalvision.name/resorses/HelveticaNeueLT/4bfcbca43f8e9ab6573aff70d9d3d39c.eot");
+  src: url("http://globalvision.name/resorses/HelveticaNeueLT/4bfcbca43f8e9ab6573aff70d9d3d39c.eot?#iefix") format("embedded-opentype"),
+  url("http://globalvision.name/resorses/HelveticaNeueLT/4bfcbca43f8e9ab6573aff70d9d3d39c.woff2") format("woff2"), 
+  url("http://globalvision.name/resorses/HelveticaNeueLT/4bfcbca43f8e9ab6573aff70d9d3d39c.woff") format("woff"),
+  url("http://globalvision.name/resorses/HelveticaNeueLT/4bfcbca43f8e9ab6573aff70d9d3d39c.ttf") format("truetype"),
+  url("http://globalvision.name/resorses/HelveticaNeueLT/4bfcbca43f8e9ab6573aff70d9d3d39c.svg#HelveticaNeueCyr LT Com 35 Thin") format("svg");
+}
+
+/*menu*/
+// .hidden-menu {
+//   display: block;
+//   position: fixed;
+//   list-style:none;
+//   padding: 10px;
+//   margin: 0;
+//   box-sizing: border-box;
+//   width: 200px;
+//   background-color: #eee;
+//   height: 100%;
+//   top: 0;
+//   left: -200px;
+//   transition: left .2s;
+//   z-index: 2;
+//   -webkit-transform: translateZ(0);
+//   -webkit-backface-visibility: hidden;
+//   &:checked ~ .btn-menu {
+// 	  left: 160px;
+// 	}
+// }
+// .hidden-menu-ticker {
+//   display: none;
+// }
+// .btn-menu {
+//   color: #fff;
+//   background-color: #666;
+//   padding: 5px;
+//   position: fixed;
+//   top: 5px;
+//   left: 5px;
+//   cursor: pointer;
+//   transition: left .23s;
+//   z-index: 3;
+//   width: 25px;
+//   -webkit-transform: translateZ(0);
+//   -webkit-backface-visibility: hidden;
+
+//   span {
+//     display: block;
+//     height: 5px;
+//     background-color: #fff;
+//     margin: 5px 0 0;
+//     transition: all .1s linear .23s;
+//     position: relative;
+//   }
+//   span.first {
+// 	  margin-top: 0;
+// 	}
+// }
+.hidden-menu {
+  display: block;
+  position: fixed;
+  list-style:none;
+  padding: 50px 0 0 0;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  width: 195px;
+  background-color: #1e1e1e;
+  max-height: 245px;
+  height: 100%;
+  top: 0;
+  left: -200px;
+  transition: left .2s;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+
+  li { 
+  	margin: 15px auto;
+
+	  .add-client-button {
+	  	width: 147px;
+	  	height: 38px;
+	  	display: block;
+	  	margin: 0 auto;
+	  	padding: 0;
+	  	border-radius: 4px;
+	  	overflow: hidden;
+	  	background-color: #f70036;
+	  	color: #fff;
+
+	  	.fa-plus {
+		    display: inline-block;
+		    font-weight: 300;
+		    margin: 0 0 0 5px;
+		    font-size: 18px;
+		    padding: 0;
+	    }
+	    .sign-title {
+		    font-size: 18px;
+	    }
+
+	  }
+  	a {
+  		display: block;
+	    font-family: 'HelveticaNeue', 'Arial', sans-serif;
+	    color: #818181;
+		font-size: 18px;
+		font-weight: 400;
+	    vertical-align: middle;
+	    text-align: center;
+	  	line-height: 38px;
+	  	text-decoration: none;
+	  	vertical-align: middle;
+
+	  	&:hover {
+	  		text-decoration: none;
+	  	}
+  	}
+  	.sign-out-btn {
+	    display: block;
+	    width: 115px;
+  		height: 38px;
+	    margin: 0 auto;
+	    vertical-align: middle;
+	    line-height: 38px;
+	    border: 1px solid #2c2c2c;
+
+	    img {
+	    	vertical-align: middle;
+	    }
+  	}
+  }
+}
+.hidden-menu-ticker {
+  display: none;
+}
+.btn-menu {
+  color: #fff;
+  background-color: #1e1e1e;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: left .23s;
+  z-index: 3;
+  width: 25px;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+}
+.btn-menu span.first {
+  margin-top: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu {
+  left: 160px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+/*end menu*/
+/*dropdown filter*/
+    .filter-block {
+        float: right;
+        margin: 5px 10px 0 0;
+    }
+    #sidebar .form input[type='submit'] {
+        display: block;
+        width: 51px;
+        height: 41px;
+        float: right;
+        border: none;
+        margin: 20px 20px 16px 20px;
+        font-size: 16px;
+        font-family: Arial, Helvetica, Sans Serif;
+        color: #FFFFFF;
+        background-color: #f70036;
+        border-radius: 2px 3px 3px 2px;
+    }
+    #sidebar {
+        height:185px;
+        background:#1e1e1e;
+        width:203px;
+        clear:none;
+        float:right;
+        position: absolute;
+        top: 36px;
+        right: 0;
+        z-index: 2;
+    }
+    #sidebar .right {
+        width: auto;
+        float: left;
+        -webkit-order: 2;
+        order: 2;
+    }
+    label {color: #fff; float:right;}
+    input{display:none;}
+    input:checked+#sidebar{display:none;}
+    .filter {
+
+    }
+    /*end dropdown filter*/
+header {
+	height: 47px;
+	box-sizing: border-box;
+	background-color: #1e1e1e;
+
+	.logo {
+		float: left;
+	    max-width: 20px;
+	    max-height: 20px;
+	    margin: 7px 0 0 50px;
+		overflow: hidden;
+		color: #fff;
+		font-family: 'HelveticaNeueLT', sans-serif;
+		font-size: 22px;
+		font-weight: 100;
+		line-height: 17px;
+		text-decoration: none;
+
+		img {
+			max-width: 100%;
+		}
+	}
+}

@@ -19,20 +19,22 @@
 </head>
 <body>
 	<header>
+		<h1 class="logo">
+			<a href="#">
+				<img src="images/logo.png" alt="New client management system">
+			</a>
+        </h1>
 		<div class="dropdovn-menu">
-            <h1 class="logo">
-				<a href="#"></a>
-            </h1>
             <input type="checkbox" id="hmt" class="hidden-menu-ticker">
-            <label class="btn-menu" for="hmt">
-                <span class="first"></span>
-                <span class="second"></span>
-                <span class="third"></span>
-            </label>
-            <ul class="hidden-menu">
+			<label class="btn-menu" for="hmt">
+			  <span class="first"></span>
+			  <span class="second"></span>
+			  <span class="third"></span>
+			</label>
+			<ul class="hidden-menu">
                 <li>
-                	<a href="#">
-                		<span>Add client</span>
+                	<a class="add-client-button" href="#">
+                		<span class="sign-title">Add client</span>
                 		<span class="fa fa-plus"></span>
                 	</a>
                 </li>
@@ -41,8 +43,10 @@
                 </li>
                 <li>
                 	<a href="#">
-						<span class="fa fa-sign-out" aria-hidden="true"></span>
-                		<span>Sign out</span>
+						<span class="sign-out-btn">
+							<img style="vertical-align: middle;" src="images/exit_img.png" alt="exit">
+                			<span>Sign out</span>
+            			</span>
             		</a>
                 </li>
             </ul>
