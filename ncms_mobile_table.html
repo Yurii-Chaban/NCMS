@@ -14,6 +14,9 @@
 
 	<!-- Include styles -->
 	<link rel="stylesheet" href="stylesheets/font-awesome.css">
+	<link rel="stylesheet" href="stylesheets/icon.css">
+	<link rel="stylesheet" href="stylesheets/semantic.css">
+	<link rel="stylesheet" href="stylesheets/dropdown.css">
 	<link rel="stylesheet" href="stylesheets/main_style.css">
 
 </head>
@@ -51,29 +54,68 @@
                 </li>
             </ul>
         </div>
-		 <div class="filter-block">
-            <a href="#" class="add-client"><span class="fa fa-plus" aria-hidden="true"></span></a>
-            <label for="hider"> <span class="fa fa-filter fa-2x" aria-hidden="true"></span></label>
-            <input type="checkbox" checked="no" id="hider">
-            <div id="sidebar">
-                <form action="#" method="post">
-                	<select name="services" multiple>
-                		<option value="Services"></option>
-                		<option>Services 1</option>
-                		<option>Services 2</option>
-                		<option>Services 3</option>
-                	</select>
-                	<select name="Status" multiple>
-                		<option value="status"></option>
-                		<option>Status 1</option>
-                		<option>Status 2</option>
-                		<option>Status 3</option>
-                	</select>
-                	<input type="submit" value="OK">
-                </form>
-        	</div>
+		<div class="filter-block">
+			<a href="#" class="add-client"><span class="fa fa-plus" aria-hidden="true"></span></a>
+			<label for="hider"> <span class="fa fa-filter fa-2x" aria-hidden="true"></span></label>
+			<input type="checkbox" checked="no" id="hider">
+			<div id="sidebar">
+				<div class="ui floating dropdown labeled icon button">
+				  <span class="text">Status</span>
+				  <i class="dropdown icon"></i>
+				  <div class="menu">
+				    <div class="ui icon search input">
+				      <i class="search icon"></i>
+				      <input type="text" placeholder="Search tags...">
+				    </div>
+				    <div class="divider"></div>
+				    
+				    <div class="scrolling menu">
+				      <div class="item">
+				        Active
+				      </div>
+				      <div class="item">
+				        Signed
+				      </div>
+				      <div class="item">
+				        Refused
+				      </div>
+				      <div class="item">
+				        Delete
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<div class="ui floating dropdown labeled icon button">
+				  <span class="text">Service</span>
+				  <i class="dropdown icon"></i>
+				  <div class="menu">
+				    <div class="ui icon search input">
+				      <i class="search icon"></i>
+				      <input type="text" placeholder="Search tags...">
+				    </div>
+				    <div class="divider"></div>
+				    
+				    <div class="scrolling menu">
+				      <div class="item">
+				        WEB
+				      </div>
+				      <div class="item">
+				        SEO
+				      </div>
+				      <div class="item">
+				        SOFT
+				      </div>
+				      <div class="item">
+				        OTHER
+				      </div>
+				    </div>
+				  </div>
+				</div>
+				<a class="filter-button" href="#">OK</a>
+			</div>
+		</div>
 	</header>
-	<section>
+	<section class="table-content">
 		<div class="wrapper">
 			<table class="table table-bordered table-hover tablesorter" id="maintable">
                   <thead>
@@ -89,18 +131,45 @@
 					<tr>
 						<td>1</td>
 						<td>The Coca-Cola Big Company</td>
-					</tr>
-					<tr>
 						<td>Web</td>
-					</tr>
-					<tr>
 						<td>15 Mart 16   15:34</td>
 						<td>
-							
+							<a id="comments-button" href="#"></a>
+							<a id="edit-button" href="#"></a>
+						</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Sed ut perspiciatis unde omnis</td>
+						<td>Seo</td>
+						<td>15 Mart 16   15:34</td>
+						<td>
+							<a id="comments-button" href="#"></a>
+							<a id="edit-button" href="#"></a>
+						</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Sed ut perspiciatis unde omnis</td>
+						<td>Web / Seo</td>
+						<td>15 Mart 16   15:34</td>
+						<td>
+							<a id="comments-button" href="#"></a>
+							<a id="edit-button" href="#"></a>
 						</td>
 					</tr>
                   </tbody>
 		</div>	
 	</section>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/semantic.js"></script>
+	<script src="js/dropdown.js"></script>
+	<script>
+		$(document).ready(function($) {
+			$('.ui.dropdown')
+			  .dropdown()
+			;
+		});		
+	</script>
 </body>
 </html>

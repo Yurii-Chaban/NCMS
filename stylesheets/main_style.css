@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -220,7 +221,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 198, ../sass/main_style.scss */
-#sidebar .form input[type='submit'] {
+#sidebar form input[type='submit'] {
   display: block;
   width: 51px;
   height: 41px;
@@ -235,6 +236,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 211, ../sass/main_style.scss */
+.add-client {
+  display: inline-block;
+  width: 30px;
+  height: 26px;
+  margin: 4px 10px 0 0;
+  background-color: #f70036;
+  border-radius: 0;
+  overflow: hidden;
+  color: #fff;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* line 223, ../sass/main_style.scss */
 #sidebar {
   height: 185px;
   background: #1e1e1e;
@@ -247,38 +262,30 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 2;
 }
 
-/* line 222, ../sass/main_style.scss */
-#sidebar .right {
-  width: auto;
-  float: left;
-  -webkit-order: 2;
-  order: 2;
-}
-
-/* line 228, ../sass/main_style.scss */
+/* line 234, ../sass/main_style.scss */
 label {
   color: #fff;
   float: right;
 }
 
-/* line 229, ../sass/main_style.scss */
+/* line 235, ../sass/main_style.scss */
 input {
   display: none;
 }
 
-/* line 230, ../sass/main_style.scss */
+/* line 236, ../sass/main_style.scss */
 input:checked + #sidebar {
   display: none;
 }
 
 /*end dropdown filter*/
-/* line 235, ../sass/main_style.scss */
+/* line 241, ../sass/main_style.scss */
 header {
   height: 47px;
   box-sizing: border-box;
   background-color: #1e1e1e;
 }
-/* line 240, ../sass/main_style.scss */
+/* line 246, ../sass/main_style.scss */
 header .logo {
   float: left;
   max-width: 20px;
@@ -292,7 +299,143 @@ header .logo {
   line-height: 17px;
   text-decoration: none;
 }
-/* line 253, ../sass/main_style.scss */
+/* line 259, ../sass/main_style.scss */
 header .logo img {
   max-width: 100%;
+}
+/* line 263, ../sass/main_style.scss */
+header .filter-button {
+  display: block;
+  width: 51px;
+  height: 41px;
+  float: right;
+  border: none;
+  margin: 0 17px 16px 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, Sans Serif;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 41px;
+  background-color: #f70036;
+  border-radius: 2px 3px 3px 2px;
+}
+
+/* line 279, ../sass/main_style.scss */
+.table-content {
+  /* ╨╖╨░╤Б╤В╨░╨▓╨╕╤В╤М ╤В╨░╨▒╨╗╨╕╤Ж╤Г ╨╜╨╡ ╨▒╤Л╤В╤М ╤В╨░╨▒╨╗╨╕╤Ж╨╡╨╣ */
+  /* ╨б╨┐╤А╤П╤В╨░╤В╤М ╤Е╤Н╨┤╨╡╤А ╤В╨░╨▒╨╗╨╕╤Ж╤Л (╨╜╨╛ ╨╜╨╡ display: none;,╨┤╨╗╤П ╨┤╨╛╤Б╤В╤Г╨┐╨╜╨╛╤Б╤В╨╕) */
+}
+/* line 281, ../sass/main_style.scss */
+.table-content table, .table-content thead, .table-content tbody, .table-content th, .table-content td, .table-content tr {
+  display: block;
+  margin-top: 0;
+}
+/* line 287, ../sass/main_style.scss */
+.table-content thead tr {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+/* line 293, ../sass/main_style.scss */
+.table-content tr {
+  padding: 8px 5px 5px;
+  overflow: hidden;
+  clear: both;
+  border-bottom: 1px solid #adadad;
+}
+/* line 300, ../sass/main_style.scss */
+.table-content tr:nth-child(1) td:nth-child(4) {
+  color: #f70039;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+/* line 310, ../sass/main_style.scss */
+.table-content tr:nth-child(2) td:nth-child(4) {
+  color: #818181;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+/* line 320, ../sass/main_style.scss */
+.table-content tr:nth-child(3) td:nth-child(4) {
+  color: #27a600;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+/* line 330, ../sass/main_style.scss */
+.table-content td {
+  /* ╨Т╨╡╤Б╤В╨╕ ╤Б╨╡╨▒╤П ╨║╨░╨║ "row" */
+  float: left;
+  height: 30px;
+  vertical-align: middle;
+  line-height: 30px;
+  text-align: left;
+  border: none;
+  position: relative;
+}
+/* line 339, ../sass/main_style.scss */
+.table-content td:nth-child(1) {
+  width: 3%;
+  color: #4b4b4b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+/* line 346, ../sass/main_style.scss */
+.table-content td:nth-child(2) {
+  width: 93%;
+  padding-left: 5px;
+  color: #515151;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+/* line 354, ../sass/main_style.scss */
+.table-content td:nth-child(3) {
+  width: 100%;
+  color: #4b4b4b;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+/* line 361, ../sass/main_style.scss */
+.table-content td:nth-child(4) {
+  width: 70%;
+}
+/* line 364, ../sass/main_style.scss */
+.table-content td:nth-child(5) {
+  float: right;
+  text-align: right;
+  width: 25%;
+}
+/* line 369, ../sass/main_style.scss */
+.table-content td:nth-child(3), .table-content td:nth-child(4) {
+  padding-left: 15px;
+}
+/* line 374, ../sass/main_style.scss */
+.table-content #comments-button {
+  display: inline-block;
+  width: 29px;
+  height: 26px;
+  margin-right: 13px;
+  transition: all ease-in-out .3s;
+  background: url("../images/comment.png") no-repeat;
+}
+/* line 382, ../sass/main_style.scss */
+.table-content #comments-button:hover {
+  background: url("../images/comment-hover.png") no-repeat;
+}
+/* line 387, ../sass/main_style.scss */
+.table-content #edit-button {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  transition: all ease-in-out .3s;
+  background: url("../images/icon-cross.png") no-repeat;
+}
+/* line 394, ../sass/main_style.scss */
+.table-content #edit-button:hover {
+  background: url("../images/icon-cross-hover.png") no-repeat;
 }
