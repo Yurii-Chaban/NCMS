@@ -69,7 +69,7 @@
                 </div>
                 <a class="upload-img" href="#">Upload</a>
             </div>
-            <table class="table-info-contant" id="maintable">
+            <table class="table-info-content" id="maintable">
               <thead>
                  <tr>
                     <th>Company</th>
@@ -106,12 +106,6 @@
 						  <span class="text">WEB</span>
 						  <i class="chevron down icon"></i>
 						  <div class="menu">
-						    <div class="ui icon search input">
-						      <i class="search icon"></i>
-						      <input type="text" placeholder="Search tags...">
-						    </div>
-						    <div class="divider"></div>
-						    
 						    <div class="scrolling menu">
 						      <div class="item">
 						        WEB
@@ -132,21 +126,23 @@
 					</td>
 					<td>
 						<div class="select-status">
-							<div class="ui dropdown">
-							  <div class="text"><i class="plus icon"></i></div>
+							<div class="ui floating dropdown labeled icon button">
+							  <span class="text"><i class="plus icon"></i></span>
 							  <i class="chevron down icon"></i>
 							  <div class="menu">
-							    <div class="item">
-							    	<i class="plus icon"></i>
-						    	</div>
-							    <div class="item">
-							    	<i class="checkmark icon"></i>
-						    	</div>
-							    <div class="item">
-							      <i class="minus icon"></i>
-							    </div>
-							    <div class="item">
-							      <i class="remove icon"></i>
+							    <div class="scrolling menu">
+							      <div class="item">
+							       <i class="plus icon"></i>
+							      </div>
+							      <div class="item">
+							        <i class="checkmark icon"></i>
+							      </div>
+							      <div class="item">
+							        <i class="minus icon"></i>
+							      </div>
+							      <div class="item">
+							        <i class="remove icon"></i>
+							      </div>
 							    </div>
 							  </div>
 							</div>
@@ -155,11 +151,12 @@
 				</tr>
 				<tr>
 					<td>
-						<textarea name="recomended" placeholder="Something..."></textarea>
+						<p class="recomended">Recommended:</p>
+						<textarea class="recomended-text" name="recomended" placeholder="Something..."></textarea>
 					</td>
 				</tr>
 				<tr>
-					<td>Call back date <span class="fa fa-calendar" aria-hidden="true"></span></td>
+					<td><span class="call-back-date">Call back date</span> <span class="fa fa-calendar" aria-hidden="true"></span></td>
 				</tr>
 				<tr>
 					<td><span class="date">15 Mart 16   15:34</span></td>
